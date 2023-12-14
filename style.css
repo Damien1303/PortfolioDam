@@ -1,0 +1,150 @@
+
+:root{
+    --background-color:#fffafa;
+    --text-color:#181717;
+}
+body{
+    margin: 3% 15%;
+    background-color: var(--background-color);
+    color:  var(--text-color);
+}
+
+header {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+header .header-left{
+    flex: 8;
+    margin-right: 50px;
+    margin-left: 50px;
+
+}
+
+header .header-right{
+
+
+    flex: 3;
+}
+.img1{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+
+}
+.img1:hover {
+    transform: scale(1.3); /* Ajustez la valeur pour le niveau de zoom souhaité */
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    font-weight: 800;
+    
+}
+nav ul li{
+    margin-left: 20px;
+
+}
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.images{
+    margin-top: 50px;
+    
+}
+.images .image-card{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+.images .image-card .image-left{
+margin-right: 40px;
+}
+.about{
+    margin-top: 80px;
+    font-size: 20px;
+}
+ p{
+    font-size: 20px;
+    line-height: 30px;
+}
+@media screen and (max-width: 880px) {
+    .images .image-card{
+        flex-wrap: wrap;
+    }
+} 
+    
+@media screen and (max-width: 621px)  {
+    header{
+        flex-direction: column-reverse;
+    }
+    header .header-right{
+        margin-bottom: 20px;
+    }
+    
+}
+#dark-light-mode {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #1a1c1e; /* Couleur du bouton en mode clair */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#dark-light-mode:hover {
+    background-color: #dee6eb; /* Couleur du bouton au survol */
+    color: #171717;
+
+}
+
+img{
+    height: 250px;
+    width: 400px;}
+    footer {
+        background-color: #8c8383;
+        color: #fff;
+        padding: 30px 0;
+    }
+    
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .footer-section {
+        flex: 2;
+        margin: 0 30px;
+    }
+    
+    .footer-section h2 {
+        color: #fff;
+    }
+    
+    .social-icon img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    
+    .footer-bottom {
+        text-align: center;
+        padding-top: 10px;
+        border-top: 1px solid #9f9898;
+    }
